@@ -1,0 +1,80 @@
+h1 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 3px;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+span a,
+span a:hover {
+    text-decoration: none;
+    color: rgb(27, 27, 92);
+}
+
+.form {
+    padding: 30px;
+    max-width: fit-content;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 18px 0px rgba(221, 221, 221, 0.467);
+}
+
+.form-group {
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.form__input {
+    width: 380px;
+    height: 100%;
+    border: 1px solid rgb(188, 188, 188);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: inherit;
+    color: rgb(34, 34, 34);
+    outline: none;
+    padding: 1.1rem;
+    /* background: none; */
+}
+
+
+.form__input:focus {
+    border-color: #6a0eba;
+}
+
+.form__label {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    padding: 0 0.5rem;
+    font-size: 18px;
+    color: gray;
+    cursor: text;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+}
+
+.form__input:focus~.form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus)~.form__label {
+    top: -0.7rem;
+    font-size: 1rem;
+    left: 0.8rem;
+    color: #6a0eba;
+    background-color: #fff;
+}
+
+.loginBtn {
+    width: 100%;
+    padding: 0.7rem !important;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #6a0eba;
+    border: none;
+    color: #fff;
+}
